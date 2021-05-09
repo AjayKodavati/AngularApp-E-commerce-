@@ -6,13 +6,22 @@ import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductComponent } from './product/product.component';
+import { HomeComponent } from './home/home.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
     FooterComponent,
-    ProductComponent
+    ProductComponent,
+    HomeComponent,
+    RegisterComponent,
+    LoginComponent,
+    ContactusComponent,
   ],
   imports: [
     BrowserModule,

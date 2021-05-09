@@ -1,0 +1,24 @@
+ <div class="mt-5 mx-auto mb-3" style="max-width: 500px;" id="main">
+    <h1 class="text-center "> Registration Form</h1>
+    <hr>
+    
+    <form #ref=""  (ngSubmit)="addUserData(ref)">
+      <div>
+        <label for="un" class="form-label">Username</label>
+        <input type="text" name="Username" id="un" class="form-control text-white" autocomplete="off" ngModel>
+      </div>
+
+      <div>
+        <label for="db" class="form-label">Date of Birth</label>
+        <input type="date" name="dob" id="db" class="form-control text-white" autocomplete="off" ngModel>
+      </div>
+
+      <div>
+        <label for="em" class="form-label">E-mail</label>
+        <input type="email" name="email" id="em" class="form-control text-white" autocomplete="off" ngModel>
+      </div>
+      <button type="submit" class="btn btn-warning d-block mx-auto">Register</button>
+    </form>
+
+  </div>
+  
