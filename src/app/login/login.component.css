@@ -5,13 +5,15 @@
     left: 50%;
     width: 400px;
     bottom: -180px;
-    padding: 40px;
-    margin: 20px;
+    padding: 30px;
+    margin-top: 80px;
     transform: translate(-50%, -50%);
     background: rgba(0,0,0,.5);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
+    background: transparent;
+    margin-bottom: 100px;
   }
   
   .login-box h2 {

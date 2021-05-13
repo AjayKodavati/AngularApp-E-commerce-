@@ -1,0 +1,9 @@
+.nav-link:focus{
+   background-color: #F2569A;
+   color: 	#000000;
+}
+
+.nav-link{
+   color: #000000;
+   background-color: #FFD700;
+}

@@ -11,6 +11,9 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { FormsModule } from '@angular/forms';
+import { MobilesComponent } from './mobiles/mobiles.component';
+import { BikesComponent } from './bikes/bikes.component';
+import { LaptopsComponent } from './laptops/laptops.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,9 @@ import { FormsModule } from '@angular/forms';
     RegisterComponent,
     LoginComponent,
     ContactusComponent,
+    MobilesComponent,
+    BikesComponent,
+    LaptopsComponent,
   ],
   imports: [
     BrowserModule,
