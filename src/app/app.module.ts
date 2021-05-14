@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { MobilesComponent } from './mobiles/mobiles.component';
 import { BikesComponent } from './bikes/bikes.component';
 import { LaptopsComponent } from './laptops/laptops.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { LaptopsComponent } from './laptops/laptops.component';
     MobilesComponent,
     BikesComponent,
     LaptopsComponent,
+    PagenotfoundComponent,
   ],
   imports: [
     BrowserModule,

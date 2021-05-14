@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { LaptopsComponent } from './laptops/laptops.component';
 import { LoginComponent } from './login/login.component';
 import { MobilesComponent } from './mobiles/mobiles.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ProductsComponent } from './products/products.component';
 import { RegisterComponent } from './register/register.component';
 
@@ -17,9 +18,11 @@ const routes: Routes = [
   {path:'products', component:ProductsComponent,children:[
     {path:'mobiles',component:MobilesComponent},
     {path:'bikes',component:BikesComponent},
-    {path:'laptops',component:LaptopsComponent}
+    {path:'laptops',component:LaptopsComponent},
+    {path:'',redirectTo:'/products/bikes',pathMatch:'full'}
   ]},
-  {path:'',redirectTo:'/home',pathMatch:'full'}
+  {path:'',redirectTo:'/home',pathMatch:'full'},
+  {path:'**',component:PagenotfoundComponent}
 ];
 
 @NgModule({

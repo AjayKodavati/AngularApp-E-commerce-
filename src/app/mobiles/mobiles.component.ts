@@ -11,32 +11,32 @@ export class MobilesComponent  {
   products:Product[]=[
 
     {
-      productTitle:"Triumph Rocket 3",
+      productTitle:"Apple iPhone 12 Mini",
       description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repellat explicabo corporis eum omnis ad maiores dolore,",
-      productImage:"https://media.zigcdn.com/media/model/2020/Sep/2020-triumph-rocket-3-gt-right-side-view_600x400.jpg"
+      productImage:"https://m.media-amazon.com/images/I/71tT8J5cKuL._AC_UY327_QL65_.jpg"
     },
     {
-    productTitle:"Yamaha MT 15",
+    productTitle:"Apple iPhone 12 Pro",
     description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repellat explicabo corporis eum omnis ad maiores dolore",
-    productImage:"https://media.zigcdn.com/media/model/2020/Feb/mt-15-bs6_600x400.jpg"
+    productImage:"https://m.media-amazon.com/images/I/71xkMA+gvYL._AC_UY327_QL65_.jpg"
     },
     
     {
-    productTitle:"Kawasaki Z900",
+    productTitle:"Apple iPhone 11",
     description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repellat explicabo corporis eum omnis ad maiores dolore,",
-    productImage:"https://media.zigcdn.com/media/model/2020/Sep/2021-kawasaki-z-900-right-side-view_600x400.jpg"
+    productImage:"https://m.media-amazon.com/images/I/71hh7cpWadL._AC_UY327_QL65_.jpg"
     },
     
     {
-    productTitle:"Harley Davidson Iron 883",
+    productTitle:"Samsung Galaxy M31",
     description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repellat explicabo corporis eum omnis ad maiores dolore,",
-    productImage:"https://media.zigcdn.com/media/model/2019/Sep/iron-883-right-side-view_600x400.jpg"
+    productImage:"https://m.media-amazon.com/images/I/71-Su4Wr0HL._AC_UY327_FMwebp_QL65_.jpg"
     },
 
     {
-      productTitle:"Daytona 675R",
+      productTitle:"Redmi 9A",
       description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repellat explicabo corporis eum omnis ad maiores dolore,",
-      productImage:"https://i.pinimg.com/originals/87/8c/a6/878ca65b02c1cb5ba909b5957deacca6.jpg"
+      productImage:"https://m.media-amazon.com/images/I/71sxlhYhKWL._AC_UY327_FMwebp_QL65_.jpg"
     },
 
     {
