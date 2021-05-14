@@ -1,42 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../models/product.models';
-
+import {LatopsdataService} from '../latopsdata.service'
 @Component({
   selector: 'app-laptops',
   templateUrl: './laptops.component.html',
   styleUrls: ['./laptops.component.css']
 })
-export class LaptopsComponent  {
-  products:Product[]=[
+export class LaptopsComponent implements OnInit {
+  laptops:Product[]=[];
 
-    {
-      productTitle:"Apple iPhone 12 Mini",
-      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repellat explicabo corporis eum omnis ad maiores dolore,",
-      productImage:"https://m.media-amazon.com/images/I/41Y2Vs8NgSL.jpg"
-    },
-    {
-    productTitle:"Apple iPhone 12 Pro",
-    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repellat explicabo corporis eum omnis ad maiores dolore",
-    productImage:"https://m.media-amazon.com/images/I/41HiLejNULL.jpg"
-    },
-    
-    {
-    productTitle:"Apple iPhone 11",
-    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repellat explicabo corporis eum omnis ad maiores dolore,",
-    productImage:"https://m.media-amazon.com/images/I/41l7S5hlRsL.jpg"
-    },
-    
-    {
-    productTitle:"Samsung Galaxy M31",
-    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repellat explicabo corporis eum omnis ad maiores dolore,",
-    productImage:"https://m.media-amazon.com/images/I/41Y2Vs8NgSL.jpg"
-    },
+  //implimenting dependency injection
+  constructor(private dsObj:LatopsdataService){
 
-    {
-      productTitle:"Redmi 9A",
-      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repellat explicabo corporis eum omnis ad maiores dolore,",
-      productImage:"https://m.media-amazon.com/images/I/41fEHCtat0L.jpg"
-    },
-  ];
+  }
 
+  //object initilzing logic
+  ngOnInit() {
+    this.laptops=this.dsObj.getlaptopsData();
+  }
 }
