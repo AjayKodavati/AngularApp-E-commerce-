@@ -15,8 +15,15 @@ export class MobilesComponent implements OnInit {
   }
 
   ngOnInit(){
-      //object initilization logic
-      this.mobiles=this.dsObj.getMobilesData();
+      //object initilization logic  
+      this.dsObj.getMobilesData().subscribe(
+        data=>{
+          this.mobiles=data;
+        },
+        err=>{
+          console.log("err geneated is",err);
+        }
+      );
   }
 
 }
