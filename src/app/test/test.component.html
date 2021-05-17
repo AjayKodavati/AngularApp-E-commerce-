@@ -1,0 +1,25 @@
+<div class="container">
+    <span class="text-warning">Page: {{users.page}},Per_page: {{users.per_page}}, Total: {{users.total}}, Total_pages: {{users.total_pages}}</span>
+    <table class="table text-center text-warning mt-3 table-bordered">
+        <thead>
+            <tr>
+                <th>USER-ID</th>
+                <th>Name</th>
+                <th>Year</th>
+                <th>Color</th>
+                <th>pantone_valu</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let userobj of users.data">
+                <td>{{userobj.id}}</td>
+                <td>{{userobj.name}}</td>
+                <td>{{userobj.year}}</td>
+                <td><button class="btn" style="background-color: {{userobj.color}} ;">color</button></td>
+                <td>{{userobj.pantone_value}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="text-warning">URL -  {{users.support.url}}</p>
+    <p class="text-warning">{{users.support.text}}</p>
+</div>

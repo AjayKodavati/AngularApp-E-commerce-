@@ -9,6 +9,7 @@ import { MobilesComponent } from './mobiles/mobiles.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ProductsComponent } from './products/products.component';
 import { RegisterComponent } from './register/register.component';
+import { TestComponent } from './test/test.component';
 
 const routes: Routes = [
   {path:'home', component:HomeComponent},
@@ -21,6 +22,7 @@ const routes: Routes = [
     {path:'laptops',component:LaptopsComponent},
     {path:'',redirectTo:'/products/bikes',pathMatch:'full'}
   ]},
+  {path:'test',component:TestComponent},
   {path:'',redirectTo:'/home',pathMatch:'full'},
   {path:'**',component:PagenotfoundComponent}
 ];

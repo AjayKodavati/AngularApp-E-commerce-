@@ -15,6 +15,7 @@ import { MobilesComponent } from './mobiles/mobiles.component';
 import { BikesComponent } from './bikes/bikes.component';
 import { LaptopsComponent } from './laptops/laptops.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     BikesComponent,
     LaptopsComponent,
     PagenotfoundComponent,
+    TestComponent,
   ],
   imports: [
     BrowserModule,
