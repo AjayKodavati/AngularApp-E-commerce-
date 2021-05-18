@@ -16,6 +16,8 @@ import { BikesComponent } from './bikes/bikes.component';
 import { LaptopsComponent } from './laptops/laptops.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { TestComponent } from './test/test.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { TestComponent } from './test/test.component';
     LaptopsComponent,
     PagenotfoundComponent,
     TestComponent,
+    UserDetailsComponent,
+    UsersComponent,
   ],
   imports: [
     BrowserModule,

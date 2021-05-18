@@ -1,25 +1,42 @@
-<div class="container">
-    <span class="text-warning">Page: {{users.page}},Per_page: {{users.per_page}}, Total: {{users.total}}, Total_pages: {{users.total_pages}}</span>
-    <table class="table text-center text-warning mt-3 table-bordered">
-        <thead>
+<div class="container-fluid">
+    <table class="table text-warning mt-3 table-bordered text-center">
+        <thead class="m-0">
             <tr>
-                <th>USER-ID</th>
+                <th>ID</th>
                 <th>Name</th>
-                <th>Year</th>
-                <th>Color</th>
-                <th>pantone_valu</th>
+                <th>username</th>
+                <th>email</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Website</th>
+                <th>Company</th>
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let userobj of users.data">
-                <td>{{userobj.id}}</td>
-                <td>{{userobj.name}}</td>
-                <td>{{userobj.year}}</td>
-                <td><button class="btn" style="background-color: {{userobj.color}} ;">color</button></td>
-                <td>{{userobj.pantone_value}}</td>
+            <tr *ngFor="let empobj of emp">
+                <td>{{empobj.id}}</td>
+                <td>{{empobj.name}}</td>
+                <td>{{empobj.username}}</td>
+                <td>{{empobj.email}}</td>
+                <td><address>
+                    street: {{empobj.address.street}} <br>
+                    suite:  {{empobj.address.suite}} <br>
+                    City:   {{empobj.address.city}}  <br>
+                    Zipcode:    {{empobj.address.zipcode}}
+                   </address>
+               </td>
+                <td>{{empobj.phone}}</td>
+                <td>{{empobj.website}}</td>
+                <td>
+                    <address>
+                        Company Name:{{empobj.company.name}} <br>
+                        catchPhrase :{{empobj.company.catchPhrase}} <br>
+                        bs:{{empobj.company.bs}}
+                    </address>
+                </td>
             </tr>
         </tbody>
     </table>
-    <p class="text-warning">URL -  {{users.support.url}}</p>
-    <p class="text-warning">{{users.support.text}}</p>
+    <!-- <p class="text-warning">URL -  {{users.support.url}}</p>
+    <p class="text-warning">{{users.support.text}}</p> -->
 </div>

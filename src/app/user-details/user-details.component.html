@@ -1,0 +1,29 @@
+<div class="container">
+    <table class="table text-center text-warning table-bordered mt-3 justify-content-center">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Profile</th>
+                <th>Address</th>
+                <th>Profession</th>
+                <th>MobileNo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{userIdData.name}}</td>
+                <td>{{userIdData.profilepic}}</td>
+                <td><address>
+                    street: {{userIdData.address.street}} <br>
+                    suite:  {{userIdData.address.suite}} <br>
+                    City:   {{userIdData.address.city}}  <br>
+                    Zipcode:    {{userIdData.address.zipcode}}
+                   </address>
+               </td>
+               <td>{{userIdData.profession}}</td>
+               <td>{{userIdData.phone}}</td>
+            </tr>
+            
+        </tbody>
+    </table>
+</div>

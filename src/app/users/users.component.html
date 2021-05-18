@@ -1,0 +1,17 @@
+<div class="container-fluid w-25">
+    <table class="table text-warning mt-3 table-bordered text-center mx-auto">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Email-Id</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let empobj of emp">
+                <td><button class="btn btn-sm btn-info" (click)="slectedID(empobj.id)">{{empobj.id}}</button></td>
+                <td>{{empobj.email}}</td>
+            </tr>
+        </tbody>
+    </table>
+   
+</div>

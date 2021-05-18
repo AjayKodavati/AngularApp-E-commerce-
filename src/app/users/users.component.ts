@@ -1,16 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FakedataService } from '../fakedata.service';
-import { Posts } from '../models/posts.models';
-import {RemotedataService} from '../remotedata.service'
 @Component({
-  selector: 'app-test',
-  templateUrl: './test.component.html',
-  styleUrls: ['./test.component.css']
+  selector: 'app-users',
+  templateUrl: './users.component.html',
+  styleUrls: ['./users.component.css']
 })
-export class TestComponent implements OnInit {
-  
- emp:any[]=[];
+export class UsersComponent implements OnInit {
+
+  emp:any[]=[];
   //creating dependency service object
   constructor(private empObj:FakedataService,private router:Router) { 
 
@@ -36,7 +34,8 @@ export class TestComponent implements OnInit {
     
   }
   slectedID(id){
-        this.router.navigateByUrl('test/'+id);
+        this.router.navigateByUrl('users/'+id);
   }
+
 
 }
