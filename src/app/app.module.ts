@@ -18,6 +18,8 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { TestComponent } from './test/test.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { UsersComponent } from './users/users.component';
+import { ViewMobilesComponent } from './view-mobiles/view-mobiles.component';
+import { AddNewMobileComponent } from './add-new-mobile/add-new-mobile.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import { UsersComponent } from './users/users.component';
     TestComponent,
     UserDetailsComponent,
     UsersComponent,
+    ViewMobilesComponent,
+    AddNewMobileComponent,
   ],
   imports: [
     BrowserModule,

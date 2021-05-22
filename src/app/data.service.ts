@@ -13,7 +13,7 @@ export class DataService {
   
 
   getMobilesData():Observable<Product[]>{
-     return this.httpObj.get<Product[]>("assets/mobiles.json")
+     return this.httpObj.get<Product[]>("http://localhost:3000/mobiles")
   }
 
 }

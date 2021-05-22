@@ -1,8 +1,13 @@
-<div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4 mt-2 mb-5">
-                <div class="col g-4" *ngFor="let proObj of mobiles">
-                    <app-product [productObj]=proObj (myEvent)="detailsSentByChild($event)"></app-product>
-                </div>
-        </div>
+<ul class="nav nav-tabs me-auto m-4 d-flex justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="viewmobiles" routerLinkActive="active">ViewMobiles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="addnewmobiles" routerLinkActive="active">Add New Mobiles</a>
+        </li>
+</ul>
+
+<div>
+        <router-outlet></router-outlet>
 </div>
-    
+
